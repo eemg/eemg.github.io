@@ -2069,6 +2069,20 @@ input, select, textarea {
 
 /* Image */
 
+	.column {
+	  float: left;
+	  width: 50.0%;
+	  padding: 2em;
+	}
+
+	/* Clear floats after image containers */
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+
 	.image {
 		border-radius: 5px;
 		border: 0;
